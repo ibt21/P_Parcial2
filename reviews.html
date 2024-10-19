@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas</title>
+    <link rel="stylesheet" href="css/CssReviews.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="img/logo.svg">
+        </a>
+
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="Menu.html">Menú</a></li>
+            <li><a href="contacto.html">Reservar</a></li>
+            <li><a href="#">Reseñas</a></li>
+        </ul>
+
+        <a href="index.html"><span class="home"><img class="pic-size" src="img/hoome-removebg-preview.png"
+                    width="50px"></span></a>
+
+    </nav>
+    <header class="head">
+
+    </header>
+    <article class="cuerpo">
+
+        <section class="review">
+            <img src="img/foto1.png" alt="" class="perfil">
+            <p class="texto">Martin <br> <br>
+                El cafe esta muy rico y el ambiente muy diferente, muy recomendado.
+            </p>
+        </section>
+
+        <section class="review">
+            <img src="img/foto3.png" alt="" class="perfil">
+            <p class="texto"> Ema <br> <br>
+                Un lugar unico, con un estilo que destaca sobre otros cafes y esta rico el cafe, super recomendado
+                venir.
+
+            </p>
+        </section>
+
+        <section class="review">
+            <img src="img/foto2.png" alt="" class="perfil">
+            <p class="texto"> Pablo <br><br>
+                Un lugar muy tranquilo, ideal para relajarse y comer algo</p>
+        </section>
+
+        <section class="review">
+            <img src="img/foto4.png" alt="" class="perfil">
+            <p class="texto"> Rebeca <br><br>
+                El estilo de este lugar es impresionante, el cafe es delicioso y el personal muy amable. </p>
+
+        </section>
+
+    </article>
+    <footer>
+        <div id="cont1">
+            <a href="index.html">
+                <img id="logofoot" src="img/logo.svg" alt="Belle Époque Café"></a>
+            <ul class="menuF" id="menuF">
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="contacto.html">Reservar</a></li>
+                <li><a href="#">Reseñas</a></li>
+            </ul>
+        </div>
+
+       
+        <div id="cont3">
+            
+                <a href="#"><img id="redes" src="img/F.png" alt=""></a>
+                <a href="#"><img id="redes" src="img/I.png" alt=""></a>
+                <a href="#"><img id="redes" src="img/T.png" alt=""></a>
+            
+        </div>
+    </footer>
+
+    <script>//script que hace que pueda mostrarse con click
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

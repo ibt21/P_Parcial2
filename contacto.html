@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="img/logo.svg">
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="#">Reservar</a></li>
+                <li><a href="reviews.html">Reseñas</a></li>
+            </ul>
+
+            <a href="#main"><span class="home"><img class="pic-size"
+                            src="img/hoome-removebg-preview.png" width="50px"></span></a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <div class="image-container">
+                <img src="un_barista_detr_s_de_una_barra_que_esta_cafeteria_que_se_llama_belle_poque_caf_y_esta_tiene_tematica_del_art_nouveau_con_el_barista_haciendo_un_cafe_de_espaldas_sin_que_se_vea_como_si_fuera_planeado.jpeg" alt="Imagen a la izquierda">
+            </div>
+    
+            <div class="contact-form">
+                <h2>Contáctanos</h2>
+                <form action="enviado/enviado.html" method="GET">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div id="cont1">
+            <a href="index.html">
+                <img id="logofoot" src="img/logo.svg" alt="Belle Époque Café"></a>
+            <ul class="menuF" id="menuF">
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="contacto.html">Reservar</a></li>
+                <li><a href="reviews.html">Reseñas</a></li>
+            </ul>
+        </div>
+
+       
+        <div id="cont3">
+            
+                <a href="#"><img id="redes" src="img/F.png" alt=""></a>
+                <a href="#"><img id="redes" src="img/I.png" alt=""></a>
+                <a href="#"><img id="redes" src="img/T.png" alt=""></a>
+            
+        </div>
+    </footer>
+
+
+
+
+    <script>//script que hace que pueda mostrarse con click
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

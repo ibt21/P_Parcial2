@@ -1,0 +1,606 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    
+  
+}
+
+
+header {
+    width: 100%;
+    height: 700px;
+    background-color: #faf4ec;
+    background-image: url(../img/HeadF.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #464e2c;
+    position: relative;
+}
+
+nav a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 10px 0px;
+
+
+}
+
+main {
+    width: 100%;
+    height: 1600px;
+    background-color: #faf4ec;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Argaka Fashion', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 70px;
+    font-weight: 600;
+    color: #3a4122;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    font-family: 'Argaka Fashion', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #3a4122;
+    text-align: center;
+}
+
+
+
+@font-face {
+    font-family: 'Argaka Fashion';
+    /* Nombre de la tipografía */
+    src: url('fonts/ArgakaFashionRegular-2OX78.otf') format('opentype'),
+        /* Formato .otf */
+        url('fonts/ArgakaFashionRegular-K75Bo.ttf') format('truetype');
+    /* Formato .ttf */
+
+    font-style: normal;
+}
+
+.hamburger {
+    display: none;
+    width: 45px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    margin-right: 80px;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(241, 241, 241);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    float: right;
+    margin-top: 5px;
+}
+
+.menu li {
+    margin: 0 20px;
+    font-size: 23px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+    padding-left: 20px;
+}
+
+.home {
+    padding-top: 12px;
+    display: flex;
+    float: right;
+
+}
+
+#Historia {
+    width: 95%;
+    height: auto;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#contenI {
+    width: 40%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0%;
+    background-image: url(../img/His.svg);
+    box-shadow: 2px 4px 6px #464e2c;
+
+}
+
+#contenH {
+    width: 55%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 21px;
+    line-height: 40px;
+    
+}
+
+#txt {
+    display: flex;
+    align-self: center;
+}
+
+#AtM{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-top: 2px solid #3a4122;
+    border-bottom: 2px solid #3a4122;
+    
+}
+#H2H{
+    margin: 0;
+    font-family: 'Argaka Fashion', sans-serif;
+    display: flex;
+    font-size: 45px;
+    font-weight: 700;
+    color: #3a4122;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+}
+
+#Contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#c1, #c2, #c3{
+    width: 30%;
+    height: auto;
+}
+
+#foto1{
+    width: 100%;
+    height: 330px;
+    background-image: url(../img/Croiss.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#foto2{
+    width: 100%;
+    height: 330px;
+    background-image: url(../img/cafe.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#foto3{
+    width: 100%;
+    height: 330px;
+    background-image: url(../img/Tomatito.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#boton{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#botonM {
+    width: 40%;
+    height: 40px;
+    background-color: #464e2c;
+    color: #faf4ec;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+#Desc {
+    width: 100%;
+    height: 65px;
+    background-color: #464e2c;
+    opacity: 80%;
+    color: #faf4ec;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#toggleBtn1{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #faf4ec;
+    box-shadow: 2px 2px 8px #3a4122;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #464e2c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#logofoot {
+    width: 100%;
+}
+
+#cont1 {
+    width: 30%;
+    height: 230px;
+    list-style: none;
+}
+
+#cont3 {
+    width: 30%;
+    height: 230px;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menuF {
+    padding-left: 20px;
+    color: aliceblue;
+    font-size: 22px;
+    list-style: none;
+
+}
+
+.menuF a {
+    text-decoration: none;
+    line-height: 20px;
+    color: aliceblue;
+
+}
+
+#redes {
+    width: 80px;
+   
+}
+
+
+
+
+@media (max-width: 1025px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        background-color: #faf4ec;
+    }
+
+    #Historia {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #contenI {
+        width: 90%;
+        margin: 0%;
+        background-image: url(../img/His.svg);
+        box-shadow: 2px 4px 10px #464e2c;
+    
+    }
+    
+    #contenH {
+        width: 89%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        text-align: justify;
+
+    
+    }
+
+    #Desc {
+        width: 100%;
+        height: 73px;
+        background-color: #464e2c;
+        opacity: 80%;
+        color: #faf4ec;
+        font-size: 18px;
+        border: none;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   
+    #txt {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width: 770px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        background-color: #faf4ec;
+    }
+
+    header {
+        height: 400px;
+        background-image: url(../img/777.svg);
+
+    }
+
+    .home {
+        padding-top: 15px;
+        padding-right: 20px;
+        top: 50px;
+        display: flex;
+        float: right;
+
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #464e2c;
+        padding: 10px;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo {
+        width: 260px;
+        margin-top: 5px;
+    }
+
+    #AtM{
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid #3a4122;
+        border-bottom: 2px solid #3a4122;
+    }
+
+    #H2H{
+        display: flex;
+        width: 100%;
+        font-size: 45px;
+        font-weight: 700;
+        color: #3a4122;
+
+    }
+    h2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #Contenedor{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    #c1, #c2, #c3{
+        width: 80%;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px; 
+        
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    #logofoot {
+        margin-top: 15px;
+        width: 300px;
+    }
+
+    #redes {
+        width: 60px;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        background-color: #faf4ec;
+    }
+
+    header {
+        height: 300px;
+    }
+
+    .logo {
+        width: 250px;
+        margin-top: 7px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2{
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #cont3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #redes {
+        width: 50px;
+        margin-left: 110px;
+    }
+    footer {
+        height: 260px;
+    }
+}
+
+
+@media (max-width: 416px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        background-color: #faf4ec;
+    }
+
+    .logo {
+        width: 220px;
+        margin-top: 9px;
+    }
+
+    #contenH {
+        text-align: justify;
+    }
+
+    #cont3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #Desc {
+        
+        font-size: 17px;
+        
+        
+    }
+
+    #redes {
+        width: 50px;
+    }
+
+    .hamburger {
+        right: 10px;
+
+    }
+
+
+
+}
+
+@media (max-width: 429px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        background-color: #faf4ec;
+    }
+
+    #logofoot {
+        margin-top: 15px;
+
+    }
+
+    #cont3 {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    #redes {
+        width: 50px;
+        padding-bottom: 50px;
+        margin-left: 0;
+    }
+}

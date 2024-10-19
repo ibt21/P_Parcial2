@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Argaka Fashion';  /* Nombre de la tipografía */
+    src: url('fonts/ArgakaFashionRegular-2OX78.otf') format('opentype'), /* Formato .otf */
+         url('fonts/ArgakaFashionRegular-K75Bo.ttf') format('truetype');  /* Formato .ttf */
+    
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #464e2c;
+    position: relative;
+}
+
+nav a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 10px 0px;
+
+
+}
+
+.hamburger {
+    display: none;
+    width: 45px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    margin-right: 80px;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(241, 241, 241);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    float: right;
+    margin-top: 5px;
+}
+
+.menu li {
+    margin: 0 20px;
+    font-size: 23px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+    padding-left: 20px;
+}
+
+.home {
+    padding-top: 12px;
+    display: flex;
+    float: right;
+
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #464e2c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logofoot {
+    width: 100%;
+}
+
+.menuF {
+    padding-left: 20px;
+    color: aliceblue;
+    font-size: 22px;
+    list-style: none;
+
+}
+
+.menuF a {
+    text-decoration: none;
+    line-height: 20px;
+    color: aliceblue;
+
+}
+
+
+#redes {
+    width: 80px;
+}
+
+#logo{
+    height: 60px;
+    width: 20%;
+}
+
+#boton{
+    width: 10%;
+    height: 60px;
+    display: flex;
+    
+    
+    
+    
+}
+.head{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/cafe1.png);
+    background-position: center;
+    
+    
+}
+.cafee{
+    width: 100%;
+}
+.cuerpo{
+    width: 100%;
+    height: 1320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.review{
+    width: 80%;
+    height: 300px;
+    
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    padding: auto;
+    
+
+}
+
+.perfil{
+    padding: auto;
+    margin-right: 10px;
+    height: 200px;
+
+   
+    
+    
+}
+
+.texto{
+    height: 200px;
+    width: 80%;
+    border: 5px  solid black;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 18px;
+    height: 200px;
+}
+
+.pie{
+    width: 100%;
+    height: 180px;
+    background-color: #3D4026;
+}
+
+@media screen and (max-width:524px) {
+    .head{
+        background-image: url(../img/cafe2.png);
+        height: 700px;
+    }
+
+    .perfil{
+        height: 100px;
+    }
+    .review{
+        
+        height: 200px;
+    }
+
+    .texto{
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .cuerpo{
+        height: 920px;
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .texto{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 770px) {
+
+    header {
+        height: 400px;
+        background-image: url(../img/777.svg);
+        
+    }
+
+    .home {
+        padding-top: 15px;
+        padding-right: 20px;
+        top: 50px;
+        display: flex;
+        float: right;
+    
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #464e2c;
+        padding: 10px;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo {
+        width: 260px;
+        margin-top: 5px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    #logofoot {
+        margin-top: 15px;
+        width: 300px;
+    }
+
+    #redes {
+        width: 60px;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+    
+    header {
+        height: 300px;
+    }
+    .logo {
+        width: 250px;
+        margin-top: 7px;
+    }
+    #cont3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #redes {
+        width: 50px;
+    }
+}
+
+@media (max-width: 580px) {
+    
+    header {
+        height: 300px;
+    }
+    .logo {
+        width: 250px;
+        margin-top: 7px;
+    }
+    #cont3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #redes {
+        width: 50px;
+    }
+}
+
+@media (max-width: 446px) {
+    
+    .logo {
+        width: 220px;
+        margin-top: 9px;
+    }
+    #cont3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #redes {
+        width: 50px;
+    }
+
+    .hamburger {
+        right: 10px;
+        
+    }
+    
+}
+
+@media (max-width: 430px) {
+    
+    #logofoot {
+        margin-top: 15px;
+        
+    }
+    #cont3 {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    #redes {
+        width: 50px;
+        padding-bottom: 50px;
+    }
+}

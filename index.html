@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+            <img class="logo" src="img/logo.svg"></a>
+
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="contacto.html">Reservar</a></li>
+                <li><a href="reviews.html">Reseñas</a></li>
+            </ul>
+
+            <a href="#main"><span class="home">
+                <img class="pic-size" src="img/hoome-removebg-preview.png" width="50px"></span></a>
+
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Belle Époque Café</h1>
+        <h2>"Un café para saborear el arte y la elegancia."</h2>
+        </div>
+
+        <div id="Historia">
+            <div id="contenI"></div>
+
+            <div id="contenH">
+
+                <p id="txt">
+                    Belle Époque Café es mucho más que una cafetería; es un rincón creado con amor y dedicación para
+                    quienes buscan una experiencia única en cada visita. Inspirados en el elegante estilo del Art
+                    Nouveau, hemos diseñado cada detalle para que nuestros clientes se sientan transportados a una época
+                    de belleza y arte. Nos enorgullece ofrecerles no solo
+                    deliciosas bebidas y repostería artesanal, sino también un espacio donde cada visita es un momento
+                    especial, lleno de inspiración y tranquilidad. Aquí, nuestros clientes son el corazón de lo que
+                    hacemos, y siempre encontrarán un lugar para relajarse y conectarse con lo bello.
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div id="H2H"><h2 id="H2H">LO MEJOR DE LA SEMANA</h2></div>
+        <div id="AtM">
+            
+            <br><br>
+            <div id="Contenedor">
+                <div id="c1">
+                    <div id="foto1">
+                    </div>
+                    <div id="boton">
+                        <p id="Desc">Croissant de jamon con queso, dorado con mantequilla.</p>
+                    </div>
+                    <div id="boton">
+                        <button id="botonM" onclick="location.href='menu.html'">Ir al menú</button>
+                    </div>
+                </div>
+
+                <div id="c2">
+                    <div id="foto2">
+                        <img src="img/" alt="">
+                    </div>
+                    <div id="boton">
+                        <p id="Desc">Delicada fusión de espresso intenso, leche cremosa y suave espuma</p>
+                    </div>
+                    <div id="boton">
+                        <button id="botonM" onclick="location.href='menu.html'">Ir al menú</button>
+                    </div>
+                </div>
+
+                <div id="c3">
+                    <div id="foto3">
+                    </div>
+                    <div id="boton">
+                        <p id="Desc">Pan con crema de especias y tomates rostizados, delicioso y aromático.</p>
+                    </div>
+                    <div id="boton">
+                        <button id="botonM" onclick="location.href='menu.html'">Ir al menú</button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+        <div>
+            <div id="H2H"><h2 id="H2H">TE ESPERAMOS</h2></div>
+            <BR>
+            <div class="reservar">
+                <button id="toggleBtn1" type="button"> <strong> RESERVAR</strong> </button>
+            </div>
+        </div>
+
+        <script>
+            const toggleBtn1 = document.getElementById('toggleBtn1');
+
+            toggleBtn1.addEventListener('click', function () {
+
+                toggleBtn1.classList.toggle('active');
+
+                window.location.href = '';
+            });
+        </script>
+<br><br>
+
+    </main>
+
+    <footer>
+        <div id="cont1">
+            <a href="#">
+                <img id="logofoot" src="img/logo.svg" alt="Belle Époque Café"></a>
+            <ul class="menuF" id="menuF">
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="contacto.html">Reservar</a></li>
+                <li><a href="reviews.html">Reseñas</a></li>
+            </ul>
+        </div>
+
+       
+        <div id="cont3">
+            
+                <a href="#"><img id="redes" src="img/F.png" alt=""></a>
+                <a href="#"><img id="redes" src="img/I.png" alt=""></a>
+                <a href="#"><img id="redes" src="img/T.png" alt=""></a>
+            
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
