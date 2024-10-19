@@ -12,11 +12,11 @@
 }
 @font-face {
     font-family: "lato";
-    src: url(fonts/Lato-Regular.ttf);
+    src: url(f../onts/Lato-Regular.ttf);
 }
 @font-face {
     font-family: "latob";
-    src: url(fonts/Lato-Black.ttf);
+    src: url(../fonts/Lato-Black.ttf);
 }
 header {
     width: 100%;
