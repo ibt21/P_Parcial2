@@ -1,3 +1,19 @@
+
+@font-face {
+    font-family: "Argaka Fashion";  /* Nombre de la tipografía */
+    src: url('../fonts/ArgakaFashionRegular-2OX78.otf') format('opentype'), /* Formato .otf */
+         url('../fonts/ArgakaFashionRegular-K75Bo.ttf') format('truetype');  /* Formato .ttf */
+    
+    font-style: normal;
+}
+@font-face {
+    font-family: "lato";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "latob";
+    src: url(../fonts/Lato-Black.ttf);
+}
 * {
     margin: 0 auto;
     padding: 0;
@@ -7,8 +23,6 @@
     
   
 }
-
-
 header {
     width: 100%;
     height: 700px;
@@ -63,19 +77,6 @@ h2{
     font-weight: 600;
     color: #3a4122;
     text-align: center;
-}
-
-
-
-@font-face {
-    font-family: 'Argaka Fashion';
-    /* Nombre de la tipografía */
-    src: url('fonts/ArgakaFashionRegular-2OX78.otf') format('opentype'),
-        /* Formato .otf */
-        url('fonts/ArgakaFashionRegular-K75Bo.ttf') format('truetype');
-    /* Formato .ttf */
-
-    font-style: normal;
 }
 
 .hamburger {
