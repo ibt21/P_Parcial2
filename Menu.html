@@ -74,58 +74,77 @@
         <section id="comida" class="cmda">
             <div class="ali">
                 <img src="img/comida/bg-t.jpg" alt="">
-                <h3>Bagel Tzatziki</h3>
-                <p>Aderezo tzatziki, pepino, chucrut col morado, cebolla morada, jamón de pavo.
-                </p>
+                <button class="toggleButton">Bagel Tzatziki</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Aderezo tzatziki, pepino, chucrut col morado, cebolla morada, jamón de pavo.</p>
+                </div>
             </div>
             <div class="ali">
                 <img src="img/comida/bg-frutal.jpg" alt="">
-                <h3>Bagle Frutal</h3>
-                <p>Mantequilla de nueces mixtas, láminas de plátano, frambuesas, moras, miel de
-                    abeja, almendra revanada
-                    y
-                    amaranto.</p>
+                <button class="toggleButton">Bagle Frutal</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Mantequilla de nueces mixtas, láminas de plátano, frambuesas, moras, miel de
+                        abeja, almendra revanada
+                        y
+                        amaranto.</p>
+                </div>
             </div>
             <div class="ali">
                 <img src="img/comida/solo.jpg" alt="">
-                <h3>Bagel Sólo</h3>
-                <p>Tostado con queso crema</p>
+                <button class="toggleButton">Bagel Sólo</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Un bagel de tu elección tostado con queso crema</p>
+                </div>
             </div>
             <div class="ali">
                 <img src="img/comida/panini.jpg" alt="">
-                <h3>Panini</h3>
-                <p>Aderezo pesto, espinacas, queso mozzarella, tomate cherry, pimiento morrón y pechuga de pollo.</p>
+                <button class="toggleButton">Panini</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Aderezo pesto, espinacas, queso mozzarella, tomate cherry, pimiento morrón y pechuga de pollo.
+                    </p>
+                </div>
             </div class="ali">
             <div class="ali">
                 <img src="img/comida/sw-qso.jpg" alt="">
-                <h3>Grilled Cheese Sándwich</h3>
-                <p>Queso provolone, cheddar y parmesano fundidos, con mantquilla sazonada</p>
+                <button class="toggleButton">Grilled Cheese Sándwich</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Queso provolone, cheddar y parmesano fundidos, con mantquilla sazonada</p>
+                </div>
             </div>
             <div class="ali">
                 <img src="img/comida/sw-alca.jpg" alt="">
-                <h3>Sándwich Alcachofa</h3>
-                <p>Aderezo de alcachofas con parmesano, mix de lechugas, tomate cherry y jamón de pavo</p>
+
+                <button class="toggleButton">Sándwich Alcachofa</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Aderezo de alcachofas con parmesano, mix de lechugas, tomate cherry y jamón de pavo</p>
+                </div>
             </div>
             <div class="ali">
                 <img src="img/comida/toast.jpg" alt="">
-                <h3>Toast de Masa Madre</h3>
-                <p>Montado sobre rebanada de hogaza tostada, hummus, aguacate, rodajas de tomate cherry aceite de oliva,
-                    ajonjolí, cebolla y ajo tostados.</p>
+                <button class="toggleButton">Toast de Masa Madre</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Montado sobre rebanada de hogaza tostada, hummus, aguacate, rodajas de tomate cherry aceite de
+                        oliva,
+                        ajonjolí, cebolla y ajo tostados.</p>
+                </div>
             </div>
         </section>
         <h2>Postres</h2>
         <section id="postres" class="pstrs">
             <div class="pstr">
                 <img src="img/comida/rg-nutella.jpg" alt="">
-                <h3>Regalitos</h3>
-                <p>Pan de masa madre laminada con relleno</p>
-                <ul>
-                    <li>Nutella</li>
-                    <li>Almendra</li>
-                    <li>Moras</li>
-                    <li>Manzana Canela</li>
-                    <li>Frambuesa</li>
-                </ul>
+                <button class="toggleButton">Regalitos</button>
+                <div class="contenidoOculto" style="display: none;">
+                    <p>Pan de masa madre laminada con relleno:</p>
+                    <ul>
+                        <li>Nutella</li>
+                        <li>Almendra</li>
+                        <li>Moras</li>
+                        <li>Manzana Canela</li>
+                        <li>Frambuesa</li>
+                    </ul>
+                </div>
+            </div>
             </div>
             <div class="pstr">
                 <img src="img/comida/muffin-lima.jpg" alt="">
@@ -161,13 +180,13 @@
             </ul>
         </div>
 
-       
+
         <div id="cont3">
-            
-                <a href="#"><img id="redes" src="img/F.png" alt=""></a>
-                <a href="#"><img id="redes" src="img/I.png" alt=""></a>
-                <a href="#"><img id="redes" src="img/T.png" alt=""></a>
-            
+
+            <a href="#"><img id="redes" src="img/F.png" alt=""></a>
+            <a href="#"><img id="redes" src="img/I.png" alt=""></a>
+            <a href="#"><img id="redes" src="img/T.png" alt=""></a>
+
         </div>
     </footer>
 
@@ -178,6 +197,15 @@
         hamburger.addEventListener('click', () => {
             menu.classList.toggle('show');
         });
+
+        const botones = document.getElementsByClassName('toggleButton');
+        const contenedores = document.getElementsByClassName('contenidoOculto');
+
+        for (let i = 0; i < botones.length; i++) {
+            botones[i].addEventListener('click', () => {
+                contenedores[i].style.display = contenedores[i].style.display === 'none' ? 'block' : 'none';
+            });
+        }
     </script>
 </body>
 
